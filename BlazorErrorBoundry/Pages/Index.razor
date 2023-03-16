@@ -1,0 +1,20 @@
+﻿@page "/"
+
+<PageTitle>Index</PageTitle>
+
+<h1>Hello, world!</h1>
+
+Welcome to your new app.
+
+<SurveyPrompt Title="How is Blazor working for you?" />
+
+<Counter/>
+
+<ErrorBoundary Context="ex">
+    <ChildContent>
+        <FetchData></FetchData>
+    </ChildContent>
+    <ErrorContent>
+        Cannot Show weather data
+    </ErrorContent>
+</ErrorBoundary>
